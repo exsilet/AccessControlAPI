@@ -14,5 +14,11 @@
         <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.2" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2"/>
     </ItemGroup>
+    <ItemGroup>
+        <Compile Remove="AccessControlAPI.Tests\**" />
+        <Content Remove="AccessControlAPI.Tests\**" />
+        <EmbeddedResource Remove="AccessControlAPI.Tests\**" />
+        <None Remove="AccessControlAPI.Tests\**" />
+    </ItemGroup>
 
 </Project>
